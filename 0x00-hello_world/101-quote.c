@@ -8,7 +8,8 @@
 int main(void)
 {
 char messege[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-for (int i = 0 ; messege[i] != '\0'; ++i)
+int i;
+for (i = 0 ; messege[i] != '\0'; ++i)
 {
 putchar (messege[i]);
 }
