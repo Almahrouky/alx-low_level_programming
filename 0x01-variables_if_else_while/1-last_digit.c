@@ -12,7 +12,8 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-int n, x;
+int n;
+long int x;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
