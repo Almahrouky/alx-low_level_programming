@@ -8,13 +8,9 @@
 int main(void)
 {
 int i;
-for (i = 97 ; i <= 122 ; ++i)
+for (i = 0 ; i <= 9 ; ++i)
 {
-putchar((char)i);
-}
-for (i = 65 ; i < 91 ; ++i)
-{
-putchar((char)i);
+putchar(i + '0');
 }
 putchar('\n');
 return (0);
