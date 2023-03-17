@@ -19,7 +19,9 @@ for (i = l; i <= 9; ++i)
 {
 for (j = k ; j <= 9; ++j)
 {
-if (l != i || k != j)
+if (l == i && k == j)
+continue;
+else
 {
 putchar(l + '0');
 putchar(k + '0');
