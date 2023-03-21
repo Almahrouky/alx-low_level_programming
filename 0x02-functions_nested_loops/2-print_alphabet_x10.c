@@ -1,11 +1,11 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet_x10 - is a function
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 int j;
 for (j = 0; j < 10; ++j)
@@ -17,5 +17,4 @@ putchar(i);
 }
 putchar('\n');
 }
-return (0);
 }
