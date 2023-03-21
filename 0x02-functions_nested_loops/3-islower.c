@@ -9,11 +9,11 @@ int _islower(int c)
 {
 int r;
 
-r = islower('H');
+c = islower('H');
 putchar(r + '0');
-r = islower('o');
+c = islower('o');
 putchar(r + '0');
-r = islower(108);
+c = islower(108);
 putchar(r + '0');
 putchar('\n');
 return (0);
