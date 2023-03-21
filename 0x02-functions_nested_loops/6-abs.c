@@ -10,4 +10,3 @@ int _abs(int a)
 {
 return (abs(a));
 }
-~
