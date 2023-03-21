@@ -1,4 +1,6 @@
 #include "main.h"
+#include "_putchar.c"
+
 /**
  * _islower - This is a description
  * @c: This is an integer the user input
