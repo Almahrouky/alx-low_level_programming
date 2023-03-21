@@ -1,11 +1,11 @@
 #include "main.h"
 
 /** 
- * main - check the code
+ * print_alphabet - is a function
  *
- * Return: Always 0.
+ * Return: void
  */
-int main(void)
+void print_alphabet(void)
 {
 int i;
 for (i = 97; i < 123; ++i)
@@ -13,5 +13,4 @@ for (i = 97; i < 123; ++i)
 putchar(i);
 }
 putchar('\n');
-return (0);
 }
