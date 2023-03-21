@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
  * print_alphabet - is a function
  *
  * Return: void
