@@ -7,14 +7,8 @@
  */
 int _islower(int c)
 {
-int r;
-
-c = islower('H');
-putchar(r + '0');
-c = islower('o');
-putchar(r + '0');
-c = islower(108);
-putchar(r + '0');
-putchar('\n');
+if (islower(c) == 0)
 return (0);
+else
+return (1);
 }
