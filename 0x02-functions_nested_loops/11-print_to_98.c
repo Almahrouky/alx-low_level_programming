@@ -62,7 +62,8 @@ while(n != 97)
 if (n >= 100)
 {
 putchar(n / 100 + '0');
-int x = n - 100;
+int x;
+x = n - 100;
 putchar(x / 10 + '0');
 putchar(x % 10 +'0');
 putchar(',');
