@@ -7,6 +7,7 @@
  */
 void print_to_98(int n)
 {
+int x;
 if (n < 0)
 {
 while(n  !=  0)
@@ -62,7 +63,6 @@ while(n != 97)
 if (n >= 100)
 {
 putchar(n / 100 + '0');
-int x;
 x = n - 100;
 putchar(x / 10 + '0');
 putchar(x % 10 +'0');
