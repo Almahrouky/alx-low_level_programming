@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
   * _isupper - is a discription of a function

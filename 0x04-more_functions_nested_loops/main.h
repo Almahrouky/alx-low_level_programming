@@ -1,2 +1,3 @@
-pragma once
+#pragma once
+#include <stdio.h>
 int _isupper(int c);
