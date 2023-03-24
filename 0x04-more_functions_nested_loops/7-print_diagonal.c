@@ -24,5 +24,6 @@ putchar('\n');
 j++;
 }
 }
+else
 putchar('\n');
 }
