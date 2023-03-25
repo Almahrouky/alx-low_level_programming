@@ -11,7 +11,6 @@ putchar('F');
 putchar('i');
 putchar('z');
 putchar('z');
-putchar(' ');
 }
 
 /**
@@ -24,7 +23,6 @@ putchar('B');
 putchar('u');
 putchar('z');
 putchar('z');
-putchar(' ');
 }
 /**
  * main - is the main function
@@ -51,16 +49,25 @@ putchar(' ');
 else
 {
 if (i % 3 == 0 && i % 5 != 0)
+{
 printfizz();
+putchar(' ');
+}
 else if (i % 5 == 0 && i % 3 != 0)
+{
+if (i != 100)
+{
 printbuzz();
+putchar(' ');
+}
+else
+printbuzz();
+}
 else if (i % 3 == 0 && i % 5 == 0)
 {
-putchar('F');
-putchar('i');
-putchar('z');
-putchar('z');
+printfizz();
 printbuzz();
+putchar(' ');
 }
 else
 {
