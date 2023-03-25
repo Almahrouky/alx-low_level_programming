@@ -33,12 +33,10 @@ if (j != 9)
 {
 putchar(',');
 putchar(' ');
-putchar(' ');
 n += i;
 }
 }
 }
-putchar('$');
 putchar('\n');
 }
 }
