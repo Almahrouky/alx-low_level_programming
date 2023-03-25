@@ -2,6 +2,30 @@
 #include "main.h"
 
 /**
+ * printfizzx - is a functon
+ * Return: void
+ */
+void printfizzx(void)
+{
+putchar('F');
+putchar('i');
+putchar('z');
+putchar('z');
+}
+
+/**
+ * printbuzzx - is a functon
+ * Return: void
+ */
+void printbuzzx(void)
+{
+putchar('B');
+putchar('u');
+putchar('z');
+putchar('z');
+}
+
+/**
  * printfizz - is a functon
  * Return: void
  */
@@ -11,6 +35,7 @@ putchar('F');
 putchar('i');
 putchar('z');
 putchar('z');
+putchar(' ');
 }
 
 /**
@@ -23,6 +48,7 @@ putchar('B');
 putchar('u');
 putchar('z');
 putchar('z');
+putchar(' ');
 }
 /**
  * main - is the main function
@@ -45,30 +71,20 @@ putchar(i + '0');
 putchar(' ');
 }
 }
-
 else
 {
 if (i % 3 == 0 && i % 5 != 0)
-{
 printfizz();
-putchar(' ');
-}
 else if (i % 5 == 0 && i % 3 != 0)
 {
 if (i != 100)
-{
 printbuzz();
-putchar(' ');
-}
 else
-printbuzz();
+printbuzzx();
 }
 else if (i % 3 == 0 && i % 5 == 0)
-{
-printfizz();
-printbuzz();
-putchar(' ');
-}
+{printfizzx();
+printbuzz(); }
 else
 {
 putchar(i / 10 + '0');
