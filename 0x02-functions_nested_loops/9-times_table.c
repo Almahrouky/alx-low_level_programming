@@ -11,31 +11,28 @@ int i, j;
 int n;
 for (i = 0; i < 10; ++i)
 {
+n = 0;
 for (j = 0; j < 10; ++j)
 {
-if (j == 0)
-n = j;
-if (n  >= 10)
+if (n + i >= 10)
 {
+if (n / 10 != 0)
 putchar(n / 10 + '0');
 putchar(n % 10 + '0');
 if (j != 9)
 {
 putchar(',');
 putchar(' ');
-n += i;
 }
 }
 else
 {
 putchar(n + '0');
-if (j != 9)
-{
 putchar(',');
 putchar(' ');
+putchar(' ');
+}
 n += i;
-}
-}
 }
 putchar('\n');
 }
