@@ -28,9 +28,12 @@ putchar(' ');
 else
 {
 putchar(n + '0');
+if (j != 9)
+{
 putchar(',');
 putchar(' ');
 putchar(' ');
+}
 }
 n += i;
 }
