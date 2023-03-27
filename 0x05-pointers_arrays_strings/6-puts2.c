@@ -13,4 +13,5 @@ int j;
 j = strlen(str);
 for (i = 0; i < j; i = i + 2)
 putchar(str[i]);
+putchar('\n');
 }
