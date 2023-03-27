@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - is to reset
- * @*n: is a pointer
+ * @n: is a pointer
  * Retrun: void
  */
 void reset_to_98(int *n)
