@@ -14,7 +14,6 @@ int k;
 j = strlen(str);
 k = (strlen(str) + 1) / 2;
 for (i = k; i < j; i++)
-{
 putchar(str[i]);
-}
+putchar('\n');
 }
