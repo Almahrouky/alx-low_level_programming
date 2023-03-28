@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-char *numbers, *letters, *LETTERS, *symbols, password[15];
+char *numbers, *letters, *LETTERS, *symbols, password[14];
 int i, random;
 srand((unsigned int)(time(NULL)));
 numbers = "0123456789";
