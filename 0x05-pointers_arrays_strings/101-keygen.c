@@ -12,10 +12,14 @@ int main(void)
 {
 int i, random;
 srand((unsigned int)(time(NULL)));
-char numbers[] = "0123456789";
-char letters[] = "abcdefghijklmnopqrstuvwxyz";
-char LETTERS[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-char symbols[] = "!@#$%^&*?";
+char numbers[11];
+numbers = "0123456789";
+char letters[27];
+letters = "abcdefghijklmnopqrstuvwxyz";
+char LETTERS[27];
+LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char symbols[10];
+symbols = "!@#$%^&*?";
 char password[15];
 random = rand() % 4;
 for (i = 0; i < 14; ++i)
