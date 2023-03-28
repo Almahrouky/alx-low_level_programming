@@ -12,15 +12,15 @@ int main(void)
 {
 int i, random;
 srand((unsigned int)(time(NULL)));
-char *numbers[11];
+char *numbers;
 numbers = "0123456789";
-char *letters[27];
+char *letters;
 letters = "abcdefghijklmnopqrstuvwxyz";
-char *LETTERS[27];
+char *LETTERS;
 LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-char *symbols[10];
+char *symbols;
 symbols = "!@#$%^&*?";
-char password[15];
+char password;
 random = rand() % 4;
 for (i = 0; i < 14; ++i)
 {
