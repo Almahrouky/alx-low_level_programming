@@ -45,4 +45,5 @@ random = rand() % 4;
 printf("%c", password[i]);
 }
 }
+return (0);
 }
