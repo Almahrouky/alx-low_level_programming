@@ -26,6 +26,7 @@ x++;
 if (x > 0)
 s[i] = toupper(s[i]);
 i++;
+x = 0;
 }
 return (s);
 }
