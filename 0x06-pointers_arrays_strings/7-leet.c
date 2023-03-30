@@ -33,8 +33,8 @@ for (i = 0; s[i]; i++)
 {
 for (j = 0; j < 20; j++)
 {
-if (s[i] ==(char) arr[j])
-s[i] =(char) arr[j + 1];
+if (s[i] == (char) arr[j])
+s[i] = (char) arr[j + 1];
 }
 }
 return (s);
