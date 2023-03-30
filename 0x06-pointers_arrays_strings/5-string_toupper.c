@@ -7,5 +7,10 @@
  */
 char *string_toupper(char *s)
 {
-return (toupper(s));
+int i;
+for (i = 0; s[i]; ++i)
+{
+s[i] = toupper(s);
+}
+return (s);
 }
