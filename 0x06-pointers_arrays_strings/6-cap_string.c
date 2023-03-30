@@ -7,17 +7,24 @@
  */
 char *cap_string(char *s)
 {
-int i;
+int i, x;
+x = 0;
 while (s[i])
 {
 if (i == 0 || isspace(s[i - 1]) || s[i - 1] == '.' || s[i - 1] == ',')
 {
+x++;
+}
 if (s[i - 1] == ';' || s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"')
 {
+x++;
+}
 if (s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' || s[i - 1] == '}')
+{
+x++;
+}
+if (x > 0)
 s[i] = toupper(s[i]);
-}
-}
 i++;
 }
 return (s);
