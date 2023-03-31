@@ -3,7 +3,7 @@
 /**
  * print_number - is a function
  * @n: is an integer
- *Return: void
+ * Return: void
  */
 void print_number(int n)
 {
