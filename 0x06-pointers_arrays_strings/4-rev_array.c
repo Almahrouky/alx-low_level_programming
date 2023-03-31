@@ -8,7 +8,8 @@
  */
 void reverse_array(int *a, int n)
 {
-int x, b[n], i;
+int x, i;
+int b[n];
 x = n - 1;
 for (i = 0; i < n; ++i)
 b[i] = a[i];
