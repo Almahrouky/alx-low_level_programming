@@ -1,12 +1,21 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strcmp - is a function
- * @s1: is a pointer char
- * @s2: is a pointer char
- * Return: integer
+ * print_number - is a function
+ * @n: is an integer
+ * Return: no thing
  */
-int _strcmp(char *s1, char *s2)
+void print_number(int n)
 {
-return (strcmp(s1, s2));
+if (n < 0)
+{
+putchar('-');
+n = -n;
+}
+if (n / 10)
+{
+print_number(n / 10);
+}
+putchar(n % 10 + '0');
 }
