@@ -7,14 +7,26 @@
  */
 void print_number(int n)
 {
+int i, x;
+int a[20];
+x = 0;
+if (n == 0)
+putchar('0');
+else
+{
 if (n < 0)
 {
 putchar('-');
 n = -n;
 }
-if (n / 10)
+while (n > 0)
 {
-print_number(n / 10);
+a[x++] = n % 10;
+n = n / 10;
 }
-putchar(n % 10 + '0');
+for (i = x - 1; i >= 0; --i)
+{
+putchar(a[i] + '0');
+}
+}
 }
