@@ -8,7 +8,7 @@
 char *leet(char *s)
 {
 int i, j;
-char *arr[21];
+char arr[21];
 arr[0] = 'a';
 arr[1] = '4';
 arr[2] = 'A';
