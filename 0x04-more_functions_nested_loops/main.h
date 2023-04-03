@@ -13,3 +13,4 @@ void print_triangle(int size);
 void printfizz(void);
 void printbuzz(void);
 void print_number(int n);
+int _putchar(char c);
