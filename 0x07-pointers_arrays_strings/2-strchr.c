@@ -8,9 +8,8 @@
  */
 char *_strchr(char *s, char c)
 {
-strchr(s, c);
-if (s[0])
-return (s[0]);
-else
+if (strchr(s, c) == NULL)
 return (NULL);
+else
+return (strchr(s, c));
 }
