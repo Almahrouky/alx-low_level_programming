@@ -4,10 +4,13 @@
  * @a: is a pointer char
  * Return: void
  */
-void print_chessboard(char s(*a)[8])
+void print_chessboard(char (*a)[8])
 {
 int i, j;
-for (i = 0; i < a; ++i)
+for (i = 0; i < 8; ++i)
+{
 for (j = 0; j < 8; ++j)
-putchar(s[i][j]);
+putchar(a[i][j]);
+putchar('\n');
+}
 }
