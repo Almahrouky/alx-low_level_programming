@@ -10,17 +10,17 @@ int print_sign(int n)
 {
 if (n > 0)
 {
-printf("%c", '+');
+printf("%c\n", '+');
 return (1);
 }
 else if (n < 0)
 {
-printf("%c", '-');
+printf("%c\n", '-');
 return (-1);
 }
 else
 {
-printf("%c", '0');
+printf("%c\n", '0');
 return (0);
 }
 }
