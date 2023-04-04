@@ -14,5 +14,5 @@ else if (n < 0)
 printf("%c\n%d", '-', -1);
 else
 printf("%c%d\n", '0', 0);
-return (0);
+exit (0);
 }
