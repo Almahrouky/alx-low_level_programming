@@ -6,21 +6,12 @@
  *
  * Return: something
  */
-int print_sign(int n)
+void print_sign(int n)
 {
 if (n > 0)
-{
 printf("%c%d\n", '+', 1);
-return (1);
-}
 else if (n < 0)
-{
-printf("%c\n", '-');
-return (-1);
-}
+printf("%c\n%d", '-', -1);
 else
-{
-printf("%c\n", '0');
-return (0);
-}
+printf("%c%d\n", '0', 0);
 }
