@@ -12,14 +12,18 @@ int flag;
 flag = 1;
 if (n <= 1)
 flag = 0;
-if (n == 2)
-flag = 1;
 else
 {
-for (i = 2; i <= n; ++i)
-{
-if (n % i == 0)
+int x;
+x = n / 2;
+point:
+if ((n % x) == 0)
 flag = 0;
+else
+{
+x--;
+if (x > 2)
+goto point;
 }
 }
 return (flag);
