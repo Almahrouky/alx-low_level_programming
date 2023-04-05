@@ -8,15 +8,15 @@
  */
 int _pow_recursion(int x, int y)
 {
+int i;
 if (y < 0)
 return (-1);
 else
-
-/**
- * pow - is a function
- * @x: is an integer
- * @y: is an integer
- * Return: an integer
- */
-return (pow(x, y));
+{
+for (i = 0; i < y; ++i)
+{
+x = x * y;
+}
+return (x);
+}
 }
