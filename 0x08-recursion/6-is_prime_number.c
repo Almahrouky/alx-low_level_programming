@@ -27,7 +27,6 @@ return (1);
  */
 int is_prime_number(int n)
 {
-int i;
 int flag;
 flag = 1;
 if (n <= 1)
