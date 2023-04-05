@@ -13,7 +13,7 @@ res = (x + n / x) / 2;
 if (x == res)
 return (x);
 else
-sqr(n, res);
+return (sqr(n, res));
 }
 
 /**
