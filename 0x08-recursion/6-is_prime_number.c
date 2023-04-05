@@ -1,4 +1,24 @@
 #include "main.h"
+/**
+ * isprime - is a function
+ * @n: is an integer
+ * @x: is an integer
+ * Return: an integer
+ */
+int isprime(int n, int x)
+{
+if (x > 2)
+{
+if (n % x == 0 && n != x)
+return (0);
+else
+{
+return (1 && (isprime(n, x - 1)));
+}
+}
+else
+return (1);
+}
 
 /**
  * is_prime_number - is a function
@@ -7,23 +27,14 @@
  */
 int is_prime_number(int n)
 {
+int i;
 int flag;
 flag = 1;
 if (n <= 1)
 flag = 0;
 else
 {
-int x;
-x = n / 2;
-point:
-if ((n % x) == 0)
-flag = 0;
-else
-{
-x--;
-if (x > 2)
-goto point;
-}
+flag = isprime(n, n);
 }
 return (flag);
 }
