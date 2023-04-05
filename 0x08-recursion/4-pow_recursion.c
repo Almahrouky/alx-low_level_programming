@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 
 /**
  * _pow_recursion - is a function
@@ -13,8 +12,12 @@ int i;
 if (y < 0)
 return (-1);
 else
-{
-i = pow(x, y);
-return (i);
-}
+
+/**
+ * pow - is a function
+ * @x: is an integer
+ * @y: is an integer
+ * Return: an integer
+ */
+return (pow(x, y));
 }
