@@ -13,9 +13,7 @@ res = (x + n / x) / 2;
 if (x == res)
 return (x);
 else
-{
 sqr(n, res);
-}
 }
 
 /**
@@ -34,8 +32,6 @@ i = sqr(n, n);
 if (sqr(n, n) > i)
 return (-1);
 else
-{
 return (sqr(n, n));
-}
 }
 }
