@@ -16,7 +16,7 @@ if (n == 2)
 flag = 1;
 else
 {
-for (i = 2; i <= sqrt(n); ++i)
+for (i = 2; i <= n; ++i)
 {
 if (n % i == 0)
 flag = 0;
