@@ -13,7 +13,7 @@ flag = 1;
 if (n <= 1)
 flag = 0;
 if (n == 2)
-flag == 1;
+flag = 1;
 else
 {
 for (i = 2; i <= sqrt(n); ++i)
