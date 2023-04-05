@@ -1,4 +1,6 @@
 #include "main.h"
+#include <math.h>
+
 
 /**
  * _pow_recursion - is a function
