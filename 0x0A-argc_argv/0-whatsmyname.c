@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - is the main function
@@ -8,6 +8,6 @@
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
-printf("%s \n", argv[0]);
+printf("%s \n", argv[argc - 1]);
 return (0);
 }
