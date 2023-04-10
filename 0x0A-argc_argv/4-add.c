@@ -35,7 +35,7 @@ for (i = 0; i < argc; ++i)
 {
 sum += strtol(argv[i], NULL, 10);
 }
-printf("%d\n", sum);
+printf("%i\n", sum);
 return (0);
 }
 }
