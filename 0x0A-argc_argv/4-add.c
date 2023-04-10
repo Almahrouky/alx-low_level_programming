@@ -15,9 +15,9 @@ if (argc == 1)
 ;
 else
 {
-for (i = 0; i < argc; ++i)
+for (i = 1; i < argc; ++i)
 {
-if (isdigit(strtol(argv[i], NULL, 10)))
+if (atoi(argv[i]) == 0)
 {
 printf("Error\n");
 flag = 0;
