@@ -17,7 +17,9 @@ else
 {
 for (i = 1; i < argc; ++i)
 {
-if (atoi(argv[i]) == 0)
+if (isdigit(*argv[i]))
+continue;
+else
 {
 printf("Error\n");
 flag = 0;

@@ -1,10 +1,7 @@
 #include "main.h"
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-int i;
-for (i = 1; i < argc; ++i)
-{
-printf("this is %i\n", atoi(argv[i]));
-}
-return (0);
+if (isdigit(*argv[1]))
+printf("yws\n");
+return(0);
 }
