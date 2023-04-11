@@ -9,7 +9,8 @@
 char *create_array(unsigned int size, char c)
 {
 unsigned int i;
-if (char *x = (char *)malloc(size))
+char *x;
+if (x = (char *)malloc(size))
 {
 for (i = 0; i < size; ++i)
 x[i] = c;
