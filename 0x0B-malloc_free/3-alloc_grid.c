@@ -3,13 +3,13 @@
 /**
  * alloc_grid - is the function
  * @width: is an integer
- * @hight: is an integer
+ * @height: is an integer
  * Return: a pointer char
  */
 int **alloc_grid(int width, int height)
 {
 int i, j;
-int **arr = malloc(sizeof(int) * height);
+int **arr = malloc(sizeof(int *) * height);
 if (arr == NULL)
 return (NULL);
 for (i = 0; i < height; ++i)
