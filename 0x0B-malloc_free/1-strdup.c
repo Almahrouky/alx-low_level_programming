@@ -7,13 +7,9 @@
  */
 char *_strdup(char *str)
 {
-char *p;
-if (str == NULL)
-{
-return (NULL);
-exit (0);
-}
-p = (char *)malloc(strlen(str) + 1);
+char *p = (char *)malloc(strlen(str) + 1);
 strcpy (p, str);
+if (str == NULL)
+return (NULL);
 return (p);
 }
