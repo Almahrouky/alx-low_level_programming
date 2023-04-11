@@ -9,12 +9,15 @@
 char *str_concat(char *s1, char *s2)
 {
 unsigned int i;
-char *x = (char *)malloc(strlen(s1) + strlen(s2));
-if (s1 == NULL || s2 == NULL)
-return (NULL);
-for (i = 0; i < strlen(s1); ++i)
+unsigned int j;
+char *x = (char *)malloc(strlen(s1) + strlen(s2) + 1);
+j = 0;
+for (i = 0; i < strlen(s1) + strlen(s2) + 1; ++i)
+if (i == strlen(s1);
+{
+x[i] = s2[j];
+j++;
+}
 x[i] = s1[i];
-for (i = strlen(s1); i < strlen(s2); ++i)
-x[i] = s2[i];
 return (x);
 }
