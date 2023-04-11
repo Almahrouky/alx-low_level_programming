@@ -8,11 +8,16 @@
  */
 int **alloc_grid(int width, int height)
 {
-unsigned int i;
-char **x = (char **)malloc(sizeof(width) + sizeof(height));
-if (width <= 0 || height <= 0)
+unsigned int i, j;
+int **arr = malloc(sizeof(int) * height);
+if (arr == NULL)
 return (NULL);
-for (i = 0; i < sizeof(width) + sizeof(height); ++i)
-x[i] = 0;
-return (x);
+for (i = 0; i < height; ++i)
+{
+arr[i] = malloc(sizeof(int) * width);
+if (arr[i] == NULL)
+return (NULL);
+for (j = 0; j < width; j++)
+arr[i][j] = 0;
+}
 }
