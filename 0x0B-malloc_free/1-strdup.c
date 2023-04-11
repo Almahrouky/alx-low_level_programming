@@ -7,9 +7,8 @@
  */
 char *_strdup(char *str)
 {
-int i;
 char *s = (char *)malloc(strlen(str));
-for (i = 0; i < strlen(str); ++i)
+for (size_t i = 0; i < strlen(str); ++i)
 {
 s[i] = str[i];
 }
