@@ -20,4 +20,5 @@ return (NULL);
 for (j = 0; j < width; j++)
 arr[i][j] = 0;
 }
+return (arr);
 }
