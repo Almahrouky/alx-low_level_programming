@@ -16,7 +16,7 @@ j = 0;
 for (; i < strlen(s2); ++i)
 {
 x[i] = s2[j];
-j++
+j++;
 }
 return (x);
 }
