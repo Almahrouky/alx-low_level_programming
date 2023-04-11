@@ -14,6 +14,6 @@ return (NULL);
 exit (0);
 }
 p = (char *)malloc(strlen(str) + 1);
-strcpy(p, str);
+strcpy (p, str);
 return (p);
 }
