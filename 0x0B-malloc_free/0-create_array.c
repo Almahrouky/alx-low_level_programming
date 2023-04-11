@@ -9,15 +9,10 @@
 char *create_array(unsigned int size, char c)
 {
 unsigned int i;
-char *x;
-if (x = (char *)malloc(size))
-{
-for (i = 0; i < size; ++i)
-x[i] = c;
-return (x);
-}
-else
-{
+char *x = malloc(size * sizeof(char));
 if (size == 0)
 return (NULL);
+if (x = NULL)
+return (NULL);
+return (x);
 }
