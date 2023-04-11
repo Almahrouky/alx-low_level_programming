@@ -8,7 +8,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-int i;
+long unsigned int i;
 char *x = (char *)malloc(sizeof(s1) + sizeof(s2));
 if (s1 == NULL || s2 == NULL)
 return (NULL);
