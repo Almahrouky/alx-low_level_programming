@@ -16,7 +16,7 @@ if (ac == 0 || av == NULL)
 return (NULL);
 for (i = 0, j = 0; i < ac; j++, i = i + 1)
 {
-ptr[i] =(char *)av[j];
+ptr[i] = *av[j];
 ptr[i + 1] = '\n';
 }
 return (ptr);
