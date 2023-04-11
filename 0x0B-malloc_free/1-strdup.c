@@ -7,9 +7,9 @@
  */
 char *_strdup(char *str)
 {
-char *p = (char *)malloc(strlen (str) + 1);
+char *p = (char *)malloc(strlen(str)*sizeof(char));
 if (str == NULL)
 return (NULL);
-strcpy (p, str);
+strcpy(p, str);
 return (p);
 }
