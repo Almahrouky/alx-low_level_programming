@@ -17,8 +17,8 @@ for (i = 0; i < height; ++i)
 arr[i] = malloc(sizeof(int) * width);
 if (arr[i] == NULL)
 {
-for (int j = 0; j < i; j++)
-free(grid[j]);
+for (j = 0; j < i; j++)
+free(arr[j]);
 free(arr);
 return (NULL);
 }
