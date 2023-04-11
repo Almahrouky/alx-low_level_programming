@@ -7,15 +7,9 @@
  */
 char *_strdup(char *str)
 {
-size_t i;
-char *s = (char *)malloc(strlen(str));
-for (i = 0; i < strlen(str); ++i)
-{
-s[i] = str[i];
-}
-free (str);
+char *p = (char *)malloc(strlen(str)+1);
 if (str == NULL)
 return (NULL);
-else
-return (s);
+strcpy(p, str);
+return (p);
 }
