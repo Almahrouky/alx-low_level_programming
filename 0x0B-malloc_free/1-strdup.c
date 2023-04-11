@@ -9,7 +9,7 @@ char *_strdup(char *str)
 {
 char *p = (char *)malloc(strlen(str) * sizeof(char) + 1);
 if (str == NULL || p == NULL)
-return (NULL);
+return NULL;
 else
 {
 strcpy(p, str);
