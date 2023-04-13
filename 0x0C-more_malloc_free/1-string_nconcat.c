@@ -9,39 +9,17 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int i, j;
 char *ptr;
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 if (n >= strlen(s2))
-{
-ptr = malloc(strlen(s1) + strlen(s2) + 1);
+n = strlen(s2);
+ptr = malloc(sizeof(char) * (strlen(s1) + 1 + n));
 if (ptr == NULL)
 return (NULL);
-for (i = 0; i < strlen(s1); ++i)
-{
-ptr[i] = s1[i];
-}
-j = 0;
-for (; i < strlen(s1) + strlen(s2) + 1; ++i)
-{
-ptr[i] = s2[j];
-}
-j++;
-}
-else
-{
-ptr = malloc(strlen(s1) + 1 + n);
-if (ptr == NULL)
-return (NULL);
-for (i = 0; i < strlen(s1); ++i)
-{
-ptr[i] = s1[i];
-}
-j = 0;
-for (; i < strlen(s1) + n + 1; ++i)
-{
-ptr[i] = s2[j];
-}
-j++;
-}
+strcpy(ptr, s1);
+strncat(ptr, s2, n);
 return (ptr);
 }
