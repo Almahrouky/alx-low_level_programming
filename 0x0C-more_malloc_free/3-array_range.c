@@ -17,6 +17,6 @@ ptr = malloc(sizeof(int) * size);
 if (ptr == NULL)
 return (NULL);
 for (i = 0; i < size; ++i)
-ptr[i] = min +i;
+ptr[i] = min + i;
 return (ptr);
 }
