@@ -17,7 +17,7 @@ for (i = 0; i < ac; ++i)
 {
 lens += strlen(av[i]) + 1;
 }
-ptr = malloc(lens * sizeof(char));
+ptr = malloc(sizeof(char) * lens + 1);
 if (ptr == NULL)
 return (NULL);
 index = 0;
