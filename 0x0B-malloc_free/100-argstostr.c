@@ -8,16 +8,25 @@
  */
 char *argstostr(int ac, char **av)
 {
-int i, j;
-char *ptr = (char *)malloc(2 * ac * sizeof(char));
-if (ptr == NULL)
-return (NULL);
+unsigned int index, lens, i, j;
+char *ptr;
 if (ac == 0 || av == NULL)
 return (NULL);
-for (i = 0, j = 0; i < ac; j++, i = i + 1)
+lens = 0;
+for (i = 0; i < ac; ++i)
 {
-ptr[i] = *av[j];
-ptr[i + 1] = '\n';
+lens += strlen(av[i]) + 1;
+}
+ptr = malloc(lens * sizeof(char));
+if (ptr == NULL)
+return (NULL);
+index = 0;
+for (i = 0; i < ac; ++i)
+{
+strcpy(ptr + index, av[i]);
+index += strlen(av[i]);
+ptr[index] = '\n';
+index++;
 }
 return (ptr);
 }
