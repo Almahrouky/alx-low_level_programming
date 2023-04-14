@@ -20,6 +20,8 @@ free(ptr);
 return (NULL);
 }
 ppr = malloc(new_size);
+if (ppr == NULL)
+return (NULL);
 memcpy(ppr, ptr, (old_size < new_size ? old_size : new_size));
 free(ptr);
 return (ptr);
