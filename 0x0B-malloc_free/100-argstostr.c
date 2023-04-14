@@ -8,7 +8,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-unsigned int index, lens, i, j;
+int index, lens, i, j;
 char *ptr;
 if (ac == 0 || av == NULL)
 return (NULL);
