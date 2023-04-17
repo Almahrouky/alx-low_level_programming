@@ -2,11 +2,11 @@
 #define DOG_H
 
 /**
- * struct dof - is a struct
+ * struct dog - is a struct
  * @name: is a pointer char
  * @age: ia an float
- * #owner: is a pointer char
- * Longer description
+ * @owner: is a pointer char
+ * Description: some thing
  */
 struct dog
 {
