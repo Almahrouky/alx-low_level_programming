@@ -1,6 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
-
+#typedef struct dog dog_t
 /**
  * struct dog - is a struct
  * @name: is a pointer char
