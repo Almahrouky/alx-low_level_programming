@@ -33,6 +33,7 @@ len++;
 }
 return (len);
 }
+
 /**
  * new_dog - is a function
  * @name: is the naem
