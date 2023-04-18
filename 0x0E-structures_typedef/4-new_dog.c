@@ -57,10 +57,18 @@ if (dog->name == NULL)
 free(dog);
 return (NULL);
 }
+dog->age = malloc(sizeof(float) * age);
+if (dog->age == NULL)
+{
+free(dog->name);
+free(dog);
+return (NULL);
+}
 dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 if (dog->owner == NULL)
 {
 free(dog->name);
+free(dog->age);
 free(dog);
 return (NULL);
 }
