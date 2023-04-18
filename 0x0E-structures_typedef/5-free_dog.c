@@ -1,5 +1,7 @@
 #include "dog.h"
-
+#include <stdlib.h>
+#include <stdio.h>
+#include <ctype.h>
 /**
  * free_dog - is a fundc
  * @d: is adjk
