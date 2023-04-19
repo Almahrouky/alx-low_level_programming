@@ -1,4 +1,5 @@
-#include "main.h"
+#include "function_pointers.h"
+
 /**
  * print_name - is a function
  * @name: is a pointer char
