@@ -1,0 +1,12 @@
+#include "main.h"
+/**
+ * print_name - is a function
+ * @name: is a pointer char
+ * @f: is some thing
+ * Return: void
+ */
+
+void print_name(char *name, void (*f)(char *))
+{
+printf("%s\n", f(name));
+}
