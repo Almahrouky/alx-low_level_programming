@@ -12,7 +12,7 @@ int j;
 va_list ptr;
 va_start(ptr, format);
 j = 0;
-while (format[j])
+while (format && format[j])
 {
 switch (format[j])
 {
