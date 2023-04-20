@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 
-int main(int argc, argv[])
+int main(int argc,char *argv[])
 {
 int a, b;
 a = atoi(argv[1]);
