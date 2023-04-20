@@ -2,7 +2,7 @@
 
 /**
  * int_index - is a function
- * @array; is a pointer int
+ * @array: is a pointer int
  * @size: is an int
  * @cmp: is a pointer funtion
  * Return: int
