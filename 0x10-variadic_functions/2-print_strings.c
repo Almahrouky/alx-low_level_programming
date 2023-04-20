@@ -21,14 +21,14 @@ s = va_arg(ptr, char *);
 if (i != 0)
 {
 if (s == NULL)
-printf("nil%s", separator);
+printf("(nil)%s", separator);
 else
 printf("%s%s", s, separator);
 }
 else
 {
 if (s == NULL)
-printf("nil");
+printf("(nil)");
 else
 printf("%s", s);
 }
