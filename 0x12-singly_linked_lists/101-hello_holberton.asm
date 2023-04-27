@@ -1,17 +1,12 @@
 section .data
-    msg: db "Hello, Holberton", 10 ; The string to print
-    len: equ $ - msg ; The length of the string
+	msg db "Hello, Holberton",0xa
+	len equ $ - msg
 section .text
-    global main ; The entry point
-    extern printf ; The printf function
-
-; The main function
+	global main
+	extern printf
 main:
-    ; Prepare the arguments for printf
-    mov rdi, msg ; The format string
-    mov rax, 0 ; No floating point arguments
-    ; Call printf
-    call printf
-    ; Exit the program
-    mov rax, 60 ; The exit system call number
-    mov rdi, 0 ; The exit code
+	mov rdi, msg
+	mov rax, 0
+	call printf
+	mov rax, 60
+	mov rdi, 0
