@@ -3,6 +3,7 @@ section .data
 
 section .text
     global main
+    extern printf
 
 main:
     ; Set up stack frame
