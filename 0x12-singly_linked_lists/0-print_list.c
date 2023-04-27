@@ -11,9 +11,9 @@ const list_t *cur = h;
 while (cur != NULL)
 {
 if (cur->str == NULL)
-printf("[0] (nil)");
+printf("[0] (nil)\n");
 else
-printf("[%d] (%s)", cur->len, cur->str);
+printf("[%d] %s\n", cur->len, cur->str);
 cur = cur->next;
 count++;
 }
