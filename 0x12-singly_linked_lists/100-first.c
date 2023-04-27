@@ -1,11 +1,10 @@
 #include "lists.h"
 /**
- * _start - is a funtion
- * Return: void
+ * premain - is Write a function that prints a string
+ * before the main function is executed.
+ * Return: nothing
  */
-void _start(void)
+void __attribute__ ((constructor)) premain()
 {
-printf("Hello world\n");
-int ret = main();
-_exit(ret);
+printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
 }
