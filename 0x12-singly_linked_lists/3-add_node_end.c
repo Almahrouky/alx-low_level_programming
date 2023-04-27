@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_node - is a function that adds a new node
+ * add_node_end - is a function that adds a new node
  * at the beginning of a list_t list.
  * @head: is the pointer to the start of the linked list
  * @str: is the pointer to the nodes
@@ -32,7 +32,7 @@ if (*head == NULL)
 else
 {
 cur = *head;
-while(cur->next != NULL)
+while (cur->next != NULL)
 cur = cur->next;
 cur->next = new_node;
 }
