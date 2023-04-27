@@ -1,3 +1,6 @@
+section .data
+    msg: db "Hello, Holberton", 10 ; The string to print
+    len: equ $ - msg ; The length of the string
 section .text
     global main ; The entry point
     extern printf ; The printf function
