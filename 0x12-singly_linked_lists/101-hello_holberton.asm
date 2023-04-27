@@ -1,22 +1,14 @@
-section .data
-    hello: db "Hello, Holberton", 0Ah ; 0Ah is the ASCII code for a new line
-
 section .text
-    global main
-    extern printf
+    global main ; The entry point
+    extern printf ; The printf function
 
+; The main function
 main:
-    ; Set up stack frame
-    push rbp
-    mov rbp, rsp
-
-    ; Call printf function to print hello message
-    mov rdi, hello ; First argument: pointer to format string
-    xor eax, eax   ; Clear eax register to indicate no floating point arguments
+    ; Prepare the arguments for printf
+    mov rdi, msg ; The format string
+    mov rax, 0 ; No floating point arguments
+    ; Call printf
     call printf
-
-    ; Clean up stack frame and return 0
-    mov rsp, rbp
-    pop rbp
-    xor eax, eax   ; Return value of 0
-    ret
+    ; Exit the program
+    mov rax, 60 ; The exit system call number
+    mov rdi, 0 ; The exit code
