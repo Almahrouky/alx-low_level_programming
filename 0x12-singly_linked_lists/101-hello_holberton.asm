@@ -5,8 +5,8 @@ section .text
 	global main
 	extern printf
 main:
-	mov ri, msg
+	mov rdi, msg
 	mov rax, 0
-call printf
+	call printf
 	mov rax, 60
-	mov ri, 0
+	mov rdi, 0
