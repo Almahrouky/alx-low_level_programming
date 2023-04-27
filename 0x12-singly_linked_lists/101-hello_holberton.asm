@@ -1,13 +1,21 @@
 section .data
-msg: db "Hello, Holberton", 10
-len: equ $ - msg
+    hello: db "Hello, Holberton", 0Ah ; 0Ah is the ASCII code for a new line
+
 section .text
-global main
-extern printf
+    global main
+
 main:
-mov rdi, msg
-mov rax, 0
-call printf
-mov rax, 60
-mov rdi, 0
-syscall
+    ; Set up stack frame
+    push rbp
+    mov rbp, rsp
+
+    ; Call printf function to print hello message
+    mov rdi, hello ; First argument: pointer to format string
+    xor eax, eax   ; Clear eax register to indicate no floating point arguments
+    call printf
+
+    ; Clean up stack frame and return 0
+    mov rsp, rbp
+    pop rbp
+    xor eax, eax   ; Return value of 0
+    ret
