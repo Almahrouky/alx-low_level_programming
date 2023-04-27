@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * list_len - is a function that counts the number of elements in a linked list_t list
+ * list_len - counts the number of elements in a linked list_t list
  * @h: is a pointer to the start of nodes
  * Return: the number of elements in the linked list_t list
  */
