@@ -1,4 +1,4 @@
-section .start
+section .text
 	global _start
 _start:
 	mov edx, len
@@ -10,5 +10,5 @@ _start:
 	mov eax, 1
 	int 0x080
 section .data
-	msg dp "Hello, Holberton", 0xa
+	msg dp "Hello, Holberton",10
 	len equ $ -msg
