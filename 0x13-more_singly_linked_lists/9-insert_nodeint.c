@@ -15,15 +15,21 @@ listint_t *new_node, *tmp;
 new_node = malloc(sizeof(listint_t));
 if (!new_node)
 return (NULL);
+new_node->n = n;
 tmp = *head;
-for (i = 0; i < idx; ++i)
+if (idx == 0)
+{
+new_node->next = *head;
+*head = new_node;
+return (new_node);
+}
+for (i = 0; i < idx - 1; ++i)
 {
 if (!tmp)
 return (NULL);
 tmp = tmp->next;
 }
-new_node->n = n;
-tmp = new_node;
 new_node->next = tmp->next;
+tmp->next = new_node;
 return (new_node);
 }
