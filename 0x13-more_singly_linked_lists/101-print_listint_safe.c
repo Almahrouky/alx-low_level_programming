@@ -19,7 +19,7 @@ head = head->next;
 if (cur <= head)
 {
 printf("-> [%p] %d\n", (void *)head, head->n);
-exit (98);
+exit(98);
 }
 }
 return (count);
