@@ -12,13 +12,13 @@ size_t count = 0;
 const listint_t *cur;
 while (head)
 {
-printf("[%p] %d", head, head->n);
+printf("[%p] %d\n", (void *)head, head->n);
 count++;
 cur = head;
 head = head->next;
 if (cur <= head)
 {
-printf("-> [%p] %d", head, head->n);
+printf("-> [%p] %d\n", (void *)head, head->n);
 exit (98);
 }
 }
