@@ -9,16 +9,19 @@
 size_t print_listint_safe(const listint_t *head)
 {
 size_t count = 0;
-const listint_t *cur;
-while (head)
+const listint_t *cur, *pr;
+if (head == NULL)
+return (0);
+pr = head;
+while (pr)
 {
-printf("[%p] %d\n", (void *)head, head->n);
+printf("[%p] %d\n", (void *)pr, pr->n);
 count++;
-cur = head;
-head = head->next;
-if (cur <= head)
+cur = pr;
+pr = pr->next;
+if (cur <= pr)
 {
-printf("-> [%p] %d\n", (void *)head, head->n);
+printf("-> [%p] %d\n", (void *)pr, pr->n);
 exit(98);
 }
 }
